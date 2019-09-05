@@ -1,0 +1,24 @@
+Hi,
+I have a large cluster of cells which depending on the resolution I use is one large cluster or seperates into two clusters. 
+I want to know if both of these clusters are both T cells (albeit different types). On a tSNE plot they occupy they completely 
+overlap (so one small cluster is in the middle of the larger cluster).
+
+I am working with a non-model organism, so am lacking several marker genes which I could normally use. What I would like to do is
+identify the common markers found in both clusters to see if they are indeed similar or if they have been clustered incorrectly.
+
+I have read about the BuildClusterTree function. I thought I could make a cluster tree, and define markers of a clade (in this case 
+the clusters I think are both T cells), instead of just differentially expressed genes. However, I can't seem to make the cluster tree plot.
+
+this is my script:
+
+CodClusterTree=BuildClusterTree(object = allsample.data.seurat, dims = 1:20)
+
+This is the result:
+|++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 00s
+
+
+How can I visualise the cluster tree plot? Or alternatively is there a different way to identify common markers that these two clusters share?
+
+Thanks for your time!
+
+
